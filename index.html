@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="input-wrapper">
+                <label for="lat">Широта</label>
+                <input type="text" id="lat" placeholder="Например: 55.7522">
+            </div>
+            <div class="input-wrapper">
+                <label for="lon">Долгота</label>
+                <input type="text" id="lon" placeholder="Например: 37.6156">
+            </div>
+            <button id="button">Показать погоду</button>
+        </div>
+        <div id="root"></div>
+        <div id="map"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
